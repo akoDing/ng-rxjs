@@ -1,0 +1,7 @@
+<ul [ngStyle]="{'background-color': backgroundColor}">
+  <li *ngFor="let menu of menus; let i = index">
+    <a (click)="handleSelection(i)"
+      [ngStyle]="{'color': i === selectIndex ? titleActiveColor : titleColor}">{{menu.title}}</a>
+    <span class="indicator" [ngStyle]="{'background-color': indicatorColor}" *ngIf="menu.link === selectedTabLink"></span>
+  </li>
+</ul>

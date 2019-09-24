@@ -1,0 +1,25 @@
+@BaseUrl = http://apis.imooc.com/api
+
+GET {{BaseUrl}}/banners?icode=jbe12
+
+###
+POST url HTTP/1.1
+Content-Type: application/json
+
+{
+    
+}
+
+
+###
+POST http://192.168.1.96:8100/Approval/EInvoice/ListInvoice
+Content-Type: application/json
+
+{
+       "pageSize": 10,
+        "pageNO": 1
+
+}
+
+###
+GET http://localhost:7300/mock/5d7a0352a613884710eab827/mock/banners

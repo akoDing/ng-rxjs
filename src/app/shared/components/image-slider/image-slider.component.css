@@ -1,0 +1,48 @@
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+.container .image-slider {
+    height: 100%;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scroll-snap-align: start;
+}
+
+.nav-section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: .5;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    /* 放在最右边 */
+    justify-content: flex-end;
+    /* 元素被拉伸以适应容器 */
+    align-items: stretch;
+}
+
+.nav-section .slider-button {
+    display: flex;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.nav-section .slider-button-select {
+    background-color: red;
+}
